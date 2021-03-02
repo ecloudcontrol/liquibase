@@ -1,7 +1,7 @@
 app:
   name: liquibase
   code: LIQUIBASE
-  notify: appzdev@cloudbourne.co
+  notify: noreply@ecloudcontrol.com
 
 build:
   version: 3.8
@@ -13,13 +13,7 @@ build:
 deploy:
   context: alpha/DEV
   replicas: 1
-  type: statefulset
-  
-volumes:
-- claim: liquibase-data
-  mount: /var/lib/liquibase
-  name: data
-  size: 5Gi   
+   
   
 properties:
   SQL_SERVER: mssql-2017-2
@@ -27,4 +21,4 @@ properties:
   DB_USERNAME: appzuser
   DB_PASSWORD:
      vault: DB_PASSWORD
-  revision : 11
+  revision : 12
