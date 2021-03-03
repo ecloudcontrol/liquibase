@@ -1,4 +1,4 @@
-CREATE TABLE "Customers" (
+CREATE TABLE "Clients" (
 	"CustomerID" nchar (5) NOT NULL ,
 	"CompanyName" nvarchar (40) NOT NULL ,
 	"ContactName" nvarchar (30) NULL ,
@@ -15,12 +15,3 @@ CREATE TABLE "Customers" (
 		"CustomerID"
 	)
 )
-GO
- CREATE  INDEX "City" ON "dbo"."Customers"("City")
-GO
- CREATE  INDEX "CompanyName" ON "dbo"."Customers"("CompanyName")
-GO
- CREATE  INDEX "PostalCode" ON "dbo"."Customers"("PostalCode")
-GO
- CREATE  INDEX "Region" ON "dbo"."Customers"("Region")
-GO
