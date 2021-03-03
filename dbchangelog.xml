@@ -11,4 +11,16 @@
   <changeSet id="2" author="user2">
           <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create2.sql"/>
   </changeSet>
+  <changeSet id="3" author="user2">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/jobs.sql"/>
+  </changeSet>
+  <changeSet id="4" author="user3">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/jobs_insert.sql"/>
+  </changeSet>
+  <changeSet id="5" author="user4">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/Clients.sql"/>
+  </changeSet>
+  <changeSet id="6" author="user4">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/insert_Clients.sql"/>
+  </changeSet>
 </databaseChangeLog>
